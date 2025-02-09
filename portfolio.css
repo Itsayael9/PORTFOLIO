@@ -1,0 +1,178 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    text-align: center;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background: linear-gradient(13Deg, #68507B 0%, #D9D8D9 100%);
+    /* box-shadow: 5px 5px 5px ;
+    border-radius: 10px ; */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    position: relative; /* Add this to allow absolute positioning of the logo */
+}
+
+.hero .logo {
+    position: absolute; /* Position it absolutely within the hero section */
+    top: 20px; /* Adjust the top position */
+    right: 20px; /* Adjust the right position */
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image rounded */
+    border: 5px solid #ccc; /* Adds a border around the image */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds a box shadow */
+    object-fit: cover; /* Ensures the image doesn't stretch */
+}
+
+            
+
+.hero-title {
+    font-size: 3rem;
+    box-shadow: inset;
+
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #68507B;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background: #ecf0f1;
+    animation: slideIn 1.5s ease-in-out;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background: linear-gradient(13Deg, #C38EB4 0%, #86A8CF 100%);
+  
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background: #ecf0f1;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills li {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background: linear-gradient(140deg , #86A8CF 0% ,#26425A 100%);
+    color: white;
+    animation: fadeInUp 2s;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact textarea, .contact button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #dad8e0 ;
+    color: white;
+    font-weight: rgb(141, 81, 91);
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
